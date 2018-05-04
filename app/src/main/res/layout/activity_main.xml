@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnRun3"
+        android:layout_width="118dp"
+        android:layout_height="61dp"
+        android:layout_alignEnd="@+id/faceIcon"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:onClick="btnCycle"
+        android:text=" Cycle"
+        app:layout_constraintBottom_toTopOf="@+id/btnRu2"
+        app:layout_constraintEnd_toStartOf="@+id/btnRun4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animationCanvas" />
+
+    <Button
+        android:id="@+id/btnRun"
+        android:layout_width="111dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:onClick="btnBounce"
+        android:text="Bounce"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRu2"
+        app:layout_constraintTop_toTopOf="@+id/btnRu2" />
+
+    <Button
+        android:id="@+id/btnRu2"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:onClick="btnAcce"
+        android:text="Accelerate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRun3" />
+
+    <Button
+        android:id="@+id/btnRun4"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:onClick="btnDec"
+        android:text="Decelerate"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRun3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRun3"
+        app:layout_constraintTop_toTopOf="@+id/btnRun3" />
+
+    <RelativeLayout
+        android:id="@+id/animationCanvas"
+        android:layout_width="455dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRun3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId">
+
+        <ImageView
+            android:id="@+id/faceIcon"
+            android:layout_width="377dp"
+            android:layout_height="76dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="83dp"
+            android:src="@drawable/sun"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
